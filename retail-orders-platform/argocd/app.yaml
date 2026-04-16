@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: <your-github-repo>
+    repoURL: https://github.com/oniblessingt/k8s-argocd-bee-project.git
     targetRevision: main
-    path: k8s
+    path: retail-orders-platform/k8s
   destination:
     server: https://kubernetes.default.svc
     namespace: retail-dev
