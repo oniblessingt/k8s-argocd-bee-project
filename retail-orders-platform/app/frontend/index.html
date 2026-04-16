@@ -1,0 +1,12 @@
+<h1>Retail Dashboard</h1>
+<button onclick="load()">Load Orders</button>
+<pre id="out"></pre>
+
+<script>
+async function load() {
+  const res = await fetch('/api/orders');
+  const data = await res.json();
+  document.getElementById("out").innerText =
+    JSON.stringify(data, null, 2);
+}
+</script>
